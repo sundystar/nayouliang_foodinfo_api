@@ -28,9 +28,10 @@ public class FoodController  extends BaseController{
 	}
 	@RequestMapping(value = "/info",method=RequestMethod.POST)
 	@ResponseBody	
-	public APIRequest addFood() {
-		
-		return null;
+	public APIResult addFood() {
+		initParams();
+		APIResult result = foodInfoFacade.addFood(this.apiRequest);
+		return result;
 		
 	}
 	
@@ -38,14 +39,16 @@ public class FoodController  extends BaseController{
 	@RequestMapping(value = "/info",method=RequestMethod.PUT)
 	@ResponseBody
 	public APIResult updateFood() {
-		
+		initParams();
+
 
 		return new APIResult();
 	}
 	@RequestMapping(value = "/info",method=RequestMethod.DELETE)
 	@ResponseBody	
 	public APIRequest delFood() {
-		
+		initParams();
+
 		return null;
 		
 	}
@@ -53,16 +56,18 @@ public class FoodController  extends BaseController{
 	
 	@RequestMapping(value = "/info/focus",method=RequestMethod.POST)
 	@ResponseBody	
-	public APIRequest addFoodFocus() {
-		
+	public APIResult addFoodFocus() {
+		initParams();
+
 		return null;
 		
 	}
 	
 	@RequestMapping(value = "/info/cancel",method=RequestMethod.POST)
 	@ResponseBody	
-	public APIRequest addFoodCancel() {
-		
+	public APIResult addFoodCancel() {
+		initParams();
+
 		return null;
 		
 	}
@@ -70,7 +75,7 @@ public class FoodController  extends BaseController{
 	@RequestMapping(value = "/infos/search",method=RequestMethod.GET)
 	@ResponseBody
 	public APIResult searchFood() {
-		
+		initParams();
 		
 		return new APIResult();
 	}
