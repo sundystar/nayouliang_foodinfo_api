@@ -30,4 +30,44 @@ public class FoodController  extends BaseController{
 	}
 	
 	
+	@RequestMapping(value = "/info",method=RequestMethod.PUT)
+	@ResponseBody
+	public APIResult updateFood() {
+		
+
+		return new APIResult();
+	}
+	@RequestMapping(value = "/info",method=RequestMethod.DELETE)
+	@ResponseBody	
+	public APIRequest delFood() {
+		
+		return null;
+		
+	}
+	
+	
+	@RequestMapping(value = "/info/focus",method=RequestMethod.POST)
+	@ResponseBody	
+	public APIRequest addFoodFocus() {
+		
+		return null;
+		
+	}
+	
+	@RequestMapping(value = "/info/cancel",method=RequestMethod.POST)
+	@ResponseBody	
+	public APIRequest addFoodCancel() {
+		
+		return null;
+		
+	}
+	
+	@RequestMapping(value = "/infos/search",method=RequestMethod.GET)
+	@ResponseBody
+	public APIResult searchFood() {
+		
+		
+		return new APIResult();
+	}
+	
 }
