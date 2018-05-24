@@ -19,7 +19,7 @@ public class UserController  extends BaseController{
 	@ResponseBody
 	public APIResult UserList() {
 		
-
+		
 		return new APIResult();
 	}
 	@RequestMapping(value = "/user",method=RequestMethod.POST)

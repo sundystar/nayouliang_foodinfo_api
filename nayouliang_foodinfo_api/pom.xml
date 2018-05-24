@@ -30,6 +30,11 @@
 			 <version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>food_info_facade</groupId>
+		    <artifactId>food_info_facade</artifactId>
+		    <version>1.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
   <build>
     <finalName>nayouliang_foodinfo_api</finalName>

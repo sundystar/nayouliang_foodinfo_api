@@ -7,6 +7,6 @@
         http://code.alibabatech.com/schema/dubbo  
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd">       
 
-   <dubbo:reference interface="com.sly.facade.service.UserService" id="userService" check="false" />
+   <dubbo:reference interface="com.foodinfo.facade.FoodInfoFacade" id="foodInfoFacade" check="false" />
 
 </beans>
